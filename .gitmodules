@@ -7,3 +7,6 @@
 [submodule "avataars"]
 	path = avataaars
 	url = git@github.com:fifteenmania/avataaars.git
+[submodule "avataaars-back"]
+	path = avataaars-back
+	url = https://github.com/fangpenlin/avataaars.git
