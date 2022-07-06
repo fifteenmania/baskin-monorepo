@@ -1,0 +1,17 @@
+{
+  "name": "baskin-monorepo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "fifteenmania",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "baskin-client2",
+    "avataars"
+  ],
+  "scripts": {
+    "start": "yarn workspace baskin-client2 start",
+    "build-client": "yarn workspace baskin-client2 build",
+    "build": "yarn workspace avataars build"
+  }
+}
