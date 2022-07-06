@@ -1,6 +1,3 @@
-[submodule "avataaars"]
-	path = avataaars
-	url = git@github.com:fifteenmania/avataaars.git
 [submodule "baskin-client2"]
 	path = baskin-client2
 	url = git@github.com:fifteenmania/baskin-client2.git
