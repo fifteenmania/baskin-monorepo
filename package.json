@@ -7,11 +7,11 @@
   "private": true,
   "workspaces": [
     "baskin-client2",
-    "avataaars"
+    "avataaars2"
   ],
   "scripts": {
     "start": "yarn workspace baskin-client2 start",
     "build-client": "yarn workspace baskin-client2 build",
-    "build": "yarn workspace avataaars build"
+    "build": "yarn workspace avataaars2 build"
   }
 }
