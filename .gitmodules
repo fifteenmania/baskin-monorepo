@@ -1,9 +1,11 @@
 [submodule "baskin-client2"]
 	path = baskin-client2
 	url = git@github.com:fifteenmania/baskin-client2.git
+	branch = avatar
 [submodule "avataars"]
 	path = avataaars2
 	url = git@github.com:fifteenmania/avataaars2.git
+	branch = develop
 [submodule "avataaars-back"]
 	path = avataaars-back
 	url = https://github.com/fangpenlin/avataaars.git
