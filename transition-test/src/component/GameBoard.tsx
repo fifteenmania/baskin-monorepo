@@ -12,11 +12,11 @@ function DisappearingBox({displayNum, callback} : BoxProps) {
   const tl = useRef<ReturnType<typeof gsap.timeline> | null>(null)
   useEffect(() => {
     tl.current = gsap.timeline()
-        .to(el.current, {x: 100, opacity: 0, duration: 1})
+        .to(el.current, {x: 200, opacity: 0, duration: 1.5})
         .call(callback)
   }, [callback])
   return (
-    <div className="disappearing-box" ref={el}>
+    <div className="absolute x-0 y-0" ref={el}>
       {displayNum}
     </div>
   )
@@ -41,7 +41,7 @@ function BoxQueue() {
     addBox(count)
     setCount((count) => count + 1)
   }
-  return <div className="flex flex-col">
+  return <div className="relative">
     <button onClick={onButtonClick}>click me!</button>
     {queue.map((boxProps, index) => (
       <DisappearingBox key={boxProps.key} displayNum={boxProps.displayNum} callback={boxProps.callback} />
